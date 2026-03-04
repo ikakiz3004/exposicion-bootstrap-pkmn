@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Regiones</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Navbar con logo-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pokémon_logo.svg"
+            alt="Logo Pokémon."
+            width="120"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">Historia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pokedex.html">Pokédex</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/regiones.html">Regiones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/perfil.html">Progreso</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <img src="/png/banner-pkd.png" alt="Banner Pokédex" />
+
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/index.html">Historia</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Regiones</a></li>
+      </ol>
+    </nav>
+<hr>
+
+    <!-- Tabla de Regiones Pokémon -->
+    <section id="regiones" class="container my-4">
+      <h2 class="text-center">Regiones del juego</h2>
+      <table class="table table-bordered text-center table-striped table-hover">
+        <thead class="table-dark">
+          <tr>
+            <th>Región</th>
+            <th>Generación</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            data-bs-toggle="modal"
+            data-bs-target="#mapaModal"
+            data-region="Kanto"
+            data-img="/png/kanto.jpg"
+          >
+            <td>Kanto</td>
+            <td>Primera</td>
+          </tr>
+          <tr
+            data-bs-toggle="modal"
+            data-bs-target="#mapaModal"
+            data-region="Johto"
+            data-img="/png/johto.jpg"
+          >
+            <td>Johto</td>
+            <td>Segunda</td>
+          </tr>
+          <tr
+            data-bs-toggle="modal"
+            data-bs-target="#mapaModal"
+            data-region="Hoenn"
+            data-img="/png/hoenn.jpg"
+          >
+            <td>Hoenn</td>
+            <td>Tercera</td>
+          </tr>
+          <tr
+            data-bs-toggle="modal"
+            data-bs-target="#mapaModal"
+            data-region="Sinnoh"
+            data-img="/png/sinnoh.png"
+          >
+            <td>Sinnoh</td>
+            <td>Cuarta</td>
+          </tr>
+          <tr
+            data-bs-toggle="modal"
+            data-bs-target="#mapaModal"
+            data-region="Teselia"
+            data-img="/png/teselia.png"
+          >
+            <td>Teselia</td>
+            <td>Quinta</td>
+          </tr>
+          <tr
+            data-bs-toggle="modal"
+            data-bs-target="#mapaModal"
+            data-region="Alola"
+            data-img="/png/alola.jpg"
+          >
+            <td>Alola</td>
+            <td>Septima</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="mapaModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="mapaTitulo">Mapa</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body text-center">
+            <img
+              id="mapaImagen"
+              src=""
+              alt="Mapa de región"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="mt-5">
+      <div class="text-center mb-4">
+        <p>
+          Las regiones Pokémon son los grandes escenarios donde se desarrolla la
+          saga, tanto en los videojuegos como en el anime. Cada región funciona
+          como un mundo propio, con su geografía, ciudades, rutas, gimnasios y
+          Pokémon característicos.
+        </p>
+      </div>
+      <ul>
+        <li>
+          <strong>Son la base narrativa y jugable:</strong> cada región
+          introduce una nueva aventura, con un mapa distinto y una historia que
+          refleja su cultura y mitología.
+        </li>
+        <li>
+          <strong>Define la diversidad del mundo pokemon:</strong>algunas
+          regiones están inspiradas en lugares reales (Japón, Hawái, Reino
+          Unido, España), lo que aporta variedad en paisajes y estilos de vida.
+        </li>
+        <li>
+          <strong>Marcan la progresión de generaciones:</strong>cada vez que
+          aparece una nueva región, se presentan nuevos Pokémon, mecánicas de
+          juego y personajes, renovando la experiencia.
+        </li>
+        <li>
+          <strong>Reflejan identidad y tradición:</strong>mientras unas regiones
+          destacan por su conexión con la naturaleza, otras lo hacen por su
+          modernidad, tecnología o mitología.
+        </li>
+        <li>
+          <strong>Son interconectadas:</strong> aunque cada región es única,
+          todas forman parte de un mismo universo, y en ocasiones los juegos
+          permiten viajar entre ellas o encontrar referencias cruzadas.
+        </li>
+      </ul>
+    </section>
+
+    <hr>
+      <h4 class="text-center">Conoce tu avance en el mundo pokémon</h4>
+<div class="d-flex justify-content-center">
+  <a href="/perfil.html" target="_blank" class="btn btn-danger">
+    Ver Estadísticas
+  </a>
+</div>
+<br>
+    <!-- Footer -->
+    <footer class="bg-danger text-white text-center py-3">
+      <p>&copy; 2026 Regiones Pokémon – Proyecto web de Coc</p>
+    </footer>
+
+    <script> // abrir el modal con los function asignados, para la fila elegida y que se lea img y region
+      const mapaModal = document.getElementById("mapaModal");
+      mapaModal.addEventListener("show.bs.modal", function (event) {
+        const fila = event.relatedTarget; // fila para abrir modal
+        const region = fila.getAttribute("data-region"); // region pokemon de mostrar
+        const img = fila.getAttribute("data-img"); // imagen del mapita, pa que no se vea solo
+
+        document.getElementById("mapaTitulo").textContent = "Mapa de " + region; // recibe el titulo para la ventanita
+        document.getElementById("mapaImagen").src = img; // recibe la imagen para la ventanita
+      });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

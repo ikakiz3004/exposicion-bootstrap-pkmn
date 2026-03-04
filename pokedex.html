@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pokedex</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- Navbar con logo -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pokémon_logo.svg"
+            alt="Logo Pokémon."
+            width="120"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">Historia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pokedex.html"
+                >Pokédex</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/regiones.html">Regiones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/perfil.html">Progreso</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+   <img src="/png/banner-pkd.png" alt="Banner Pokédex" />
+
+           <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb" class="mb-4">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/index.html">Historia</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Pokémon atrapados</a></li>
+      </ol>
+    </nav>
+<hr>
+    <p class="text-center mt-5">
+  ¡Entrenador, tu Pokédex es más que una lista de creaturas!  
+  Cada Pokémon que capturas representa esfuerzo, aventura y pasión.  
+  Desde los clásicos de Kanto y Johto, hasta los misterios de Hoenn, Sinnoh, Teselia y la energía tropical de Alola, 
+  tu viaje demuestra que la verdadera meta no es solo atraparlos a todos, sino crecer con ellos.  
+  ¡Sigue adelante, porque cada paso te acerca más a convertirte en un Maestro Pokémon!
+</p>
+<br>
+      <!-- Pokédex con Grid -->
+  <section id="pokedex" class="container my-4">
+  <h2 class="text-center">Pokemon capturados</h2>
+<br>
+<br>  
+  <div class="row gx-1 gy-3">
+    <!-- Agua -->
+    <div class="col-md-4 col-sm-12 mb-3">
+      <div class="card" style="width: 10rem;">
+        <img src="/png/agua.png" class="card-img-top" alt="Staryu.">
+        <div class="card-body">
+          <h5 class="card-title">Staryu</h5>
+          <p class="card-text">Pokémon de tipo Agua.</p>
+          <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+              Ver más
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Starmie</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Caterpie -->
+    <div class="col-md-4 col-sm-12 mb-3">
+      <div class="card" style="width: 10rem;">
+        <img src="/png/caterpie.png" class="card-img-top" alt="Caterpie.">
+        <div class="card-body">
+          <h5 class="card-title">Caterpie</h5>
+          <p class="card-text">Tipo Bicho.</p>
+          <div class="dropdown">
+            <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown">
+              Ver más
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Metapod</a></li>
+              <li><a class="dropdown-item" href="#">Butterfree</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chikorita -->
+    <div class="col-md-4 col-sm-12 mb-3">
+      <div class="card" style="width: 10rem;">
+        <img src="/png/chikorita.png" class="card-img-top" alt="Chikorita.">
+        <div class="card-body">
+          <h5 class="card-title">Chikorita</h5>
+          <p class="card-text">Inicial de Johto, tipo Planta.</p>
+          <div class="dropdown">
+            <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown">
+              Ver más
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Bayleef</a></li>
+              <li><a class="dropdown-item" href="#">Meganium</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Electrico (Pikachu) -->
+    <div class="col-md-4 col-sm-12 mb-3">
+      <div class="card" style="width: 10rem;">
+        <img src="/png/electrico.png" class="card-img-top" alt="Magnemite.">
+        <div class="card-body">
+          <h5 class="card-title">Magnemite</h5>
+          <p class="card-text">Tipo Eléctrico/Acero.</p>
+          <div class="dropdown">
+            <button class="btn btn-warning dropdown-toggle" type="button" data-bs-toggle="dropdown">
+              Ver más
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Magneton</a></li>
+              <li><a class="dropdown-item" href="#">Magnezone</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Charmander -->
+    <div class="col-md-4 col-sm-12 mb-3">
+      <div class="card" style="width: 10rem;">
+        <img src="/png/fuego.png" class="card-img-top" alt="Charmander.">
+        <div class="card-body">
+          <h5 class="card-title">Charmander</h5>
+          <p class="card-text">Tipo Fuego.</p>
+          <div class="dropdown">
+            <button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown">
+              Ver más
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Charmeleon</a></li>
+              <li><a class="dropdown-item" href="#">Charizard</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gastly -->
+    <div class="col-md-4 col-sm-12 mb-3">
+      <div class="card" style="width: 10rem;">
+        <img src="/png/gastly.png" class="card-img-top" alt="Gastly.">
+        <div class="card-body">
+          <h5 class="card-title">Gastly</h5>
+          <p class="card-text">Tipo Fantasma/Veneno.</p>
+          <div class="dropdown">
+            <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown">
+              Ver más
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Haunter</a></li>
+              <li><a class="dropdown-item" href="#">Gengar</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gloom -->
+    <div class="col-md-4 col-sm-12 mb-3">
+      <div class="card" style="width: 10rem;">
+        <img src="/png/gloom.png" class="card-img-top" alt="Gloom.">
+        <div class="card-body">
+          <h5 class="card-title">Gloom</h5>
+          <p class="card-text">Tipo Planta/Veneno.</p>
+          <div class="dropdown">
+            <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown">
+              Ver más
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Vileplume</a></li>
+              <li><a class="dropdown-item" href="#">Bellossom</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Marril -->
+    <div class="col-md-4 col-sm-12 mb-3">
+      <div class="card" style="width: 10rem;">
+        <img src="/png/marril.png" class="card-img-top" alt="Marill.">
+        <div class="card-body">
+          <h5 class="card-title">Marill</h5>
+          <p class="card-text">Tipo Agua/Hada.</p>
+          <div class="dropdown">
+            <button class="btn btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown">
+              Ver más
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Azumarill</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Meowth -->
+    <div class="col-md-4 col-sm-12 mb-3">
+      <div class="card" style="width: 10rem;">
+        <img src="/png/meowth.png" class="card-img-top" alt="Meowth.">
+        <div class="card-body">
+          <h5 class="card-title">Meowth</h5>
+          <p class="card-text">Tipo Normal.</p>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+              Ver más
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Persian</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Oddish -->
+    <div class="col-md-4 col-sm-12 mb-3">
+      <div class="card" style="width: 10rem;">
+        <img src="/png/oddish.png" class="card-img-top" alt="Oddish.">
+        <div class="card-body">
+          <h5 class="card-title">Oddish</h5>
+          <p class="card-text">Tipo Planta/Veneno.</p>
+          <div class="dropdown">
+            <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown">
+              Ver más
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Gloom</a></li>
+              <li><a class="dropdown-item" href="#">Vileplume</a></li>
+              <li><a class="dropdown-item" href="#">Bellossom</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Omanyte -->
+    <div class="col-md-4 col-sm-12 mb-3">
+      <div class="card" style="width: 10rem;">
+        <img src="/png/omanyte.png" class="card-img-top" alt="Omanyte.">
+        <div class="card-body">
+          <h5 class="card-title">Omanyte</h5>
+          <p class="card-text">Tipo Roca/Agua, Pokémon fósil.</p>
+          <div class="dropdown">
+            <button class="btn btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown">
+              Ver más
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Omastar</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pikachu -->
+    <div class="col-md-4 col-sm-12 mb-3">
+      <div class="card" style="width: 10rem;">
+        <img src="/png/pikachu.png" class="card-img-top" alt="Pikachu.">
+        <div class="card-body">
+          <h5 class="card-title">Pikachu</h5>
+          <p class="card-text">Tipo Eléctrico.</p>
+          <div class="dropdown">
+            <button class="btn btn-warning dropdown-toggle" type="button" data-bs-toggle="dropdown">
+              Ver más
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Pichu</a></li>
+              <li><a class="dropdown-item" href="#">Raichu</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bellsprout -->
+    <div class="col-md-4 col-sm-12 mb-3">
+      <div class="card" style="width: 10rem;">
+        <img src="/png/planta.png" class="card-img-top" alt="Bulbasaur.">
+        <div class="card-body">
+          <h5 class="card-title">Bellsprout</h5>
+          <p class="card-text">Tipo Planta/Veneno.</p>
+          <div class="dropdown">
+            <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown">
+              Ver más
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Weepinbell</a></li>
+              <li><a class="dropdown-item" href="#">Victreebel</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Psyduck -->
+    <div class="col-md-4 col-sm-12 mb-3">
+      <div class="card" style="width: 10rem;">
+        <img src="/png/psyduck.png" class="card-img-top" alt="Psyduck.">
+        <div class="card-body">
+          <h5 class="card-title">Psyduck</h5>
+          <p class="card-text">Tipo Agua.</p>
+          <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+              Ver más
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Golduck</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Rattata -->
+    <div class="col-md-4 col-sm-12 mb-3">
+      <div class="card" style="width: 10rem;">
+        <img src="/png/rattata.png" class="card-img-top" alt="Rattata.">
+        <div class="card-body">
+          <h5 class="card-title">Rattata</h5>
+          <p class="card-text">Tipo Normal.</p>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+              Ver más
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Raticate</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Digglet -->
+    <div class="col-md-4 col-sm-12 mb-3">
+      <div class="card" style="width: 10rem;">
+        <img src="/png/tierra.png" class="card-img-top" alt="Digglet.">
+        <div class="card-body">
+          <h5 class="card-title">Digglet</h5>
+          <p class="card-text">Tipo Tierra.</p>
+          <div class="dropdown">
+            <button class="btn btn-warning dropdown-toggle" type="button" data-bs-toggle="dropdown">
+              Ver más
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Dugtrio</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Voltorb -->
+    <div class="col-md-4 col-sm-12 mb-3">
+      <div class="card" style="width: 10rem;">
+        <img src="/png/voltorb.png" class="card-img-top" alt="Voltorb.">
+        <div class="card-body">
+          <h5 class="card-title">Voltorb</h5>
+          <p class="card-text">Tipo Eléctrico.</p>
+          <div class="dropdown">
+            <button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown">
+              Ver más
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Electrode</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ditto -->
+    <div class="col-md-4 col-sm-12 mb-3">
+      <div class="card" style="width: 10rem;">
+        <img src="/png/ditto.png" class="card-img-top" alt="Ditto.">
+        <div class="card-body">
+          <h5 class="card-title">Ditto</h5>
+          <p class="card-text">Tipo Normal, se transforma en cualquier Pokémon.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <hr>
+  <h4 class="text-center">Conoce las regiones existentes para expandir tu pokedex</h4>
+<div class="d-flex justify-content-center">
+  <a href="/regiones.html" target="_blank" class="btn btn-danger">
+    Ver Regiones
+  </a>
+</div>
+<br>
+        <!-- Footer -->
+        <footer class="bg-danger text-white text-center py-3">
+          <p>&copy; 2026 Registro de Pokémon – Proyecto web de Coc</p>
+        </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil del Jugador</title>
+     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+</head>
+<body>
+
+  <!--Navbar con logo-->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pokémon_logo.svg"
+            alt="Logo Pokémon."
+            width="120"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">Historia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pokedex.html"
+                >Pokédex</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/regiones.html">Regiones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/perfil.html">Progreso</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <img src="/png/banner-pkd.png" alt="Banner Pokédex" />
+
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/index.html">Historia</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Progreso</a></li>
+      </ol>
+    </nav>
+<hr>
+
+        <!-- Barra de progreso -->
+        <section id="progreso" class="container my-4">
+          <h3 class="text-center">Progreso del Jugador</h3>
+
+          <h5>Experiencia de entrenador</h5>
+          <div class="progress mb-3" style="height: 30px">
+            <div class="progress-bar bg-success" style="width: 30%">30%</div>
+          </div>
+          <h5>Pokemones capturados</h5>
+          <div class="progress mb-3" style="height: 30px">
+            <div class="progress-bar bg-primary" style="width: 40%">
+              100/250
+            </div>
+          </div>
+          <h5>Pokemon principal</h5>
+          <div class="progress mb-3" style="height: 30px">
+            <div class="progress-bar bg-danger" style="width: 80%">
+              Faltan 20XP para subir de nivel
+            </div>
+          </div>
+        </section>
+
+<br>
+<section class="resumen-progreso ms-4 mt-5">
+  <h3>Resumen del Entrenamiento</h3>
+  <p>Tu camino como entrenador avanza con firmeza. 
+     Has alcanzado un <strong>30% de experiencia</strong>, demostrando constancia en tus batallas. 
+     Actualmente has capturado <strong>100 Pokémon de un total de 250</strong>, lo que refleja tu dedicación en completar la Pokédex. 
+     Tu Pokémon principal está a punto de subir de nivel: <em>faltan solo 20XP</em> para que evolucione y se fortalezca aún más.</p>
+  <p class="text-center">Sigue participando en eventos y explorando nuevas regiones para aumentar tu experiencia y completar tu Pokédex. 
+     ¡El próximo gran logro está muy cerca!</p>
+</section>
+
+    <hr>
+      <h4 class="text-center">Conoce a otros jugadores y lucha contra ellos</h4>
+<div class="d-flex justify-content-center"
+              data-bs-toggle="tooltip"
+              title="Formulario de batallas">
+  <a href="/contacto.html" target="_blank" class="btn btn-danger">
+    Enviar reto
+  </a>
+</div>
+<br>
+       <!-- Footer -->
+        <footer class="bg-danger text-white text-center py-3">
+          <p>&copy; 2026 Historia de Pokémon – Proyecto web de Coc</p>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

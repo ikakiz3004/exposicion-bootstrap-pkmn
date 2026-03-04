@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pokemoncito</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar con logo -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pokémon_logo.svg"
+            alt="Logo Pokémon."
+            width="120"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">Historia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pokedex.html">Pokédex</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/regiones.html">Regiones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/perfil.html">Progreso</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Carrusel -->
+    <section id="inicio" class="container my-4">
+      <h1 class="text-center">Bienvenido al Mundo Pokémon</h1>
+      <p class="text-center">
+        Explora la Pokédex, conoce a tus Pokémon favoritos y descubre cómo
+        Bootstrap organiza todo de manera responsiva.
+      </p>
+
+      <div id="pokemonCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner text-center">
+          <div class="carousel-item">
+            <img
+              src="https://i.redd.it/zfpt5r6fvizc1.jpeg"
+              alt="Pokemon tipo dragon."
+              class="d-block mx-auto"
+              style="width: 1100px; height: 293px"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://i.pinimg.com/736x/2b/1d/fe/2b1dfec19b945a19ac39641278a6a799.jpg"
+              alt="Pokemon tipo agua."
+              class="d-block mx-auto"
+              style="width: 1100px; height: 293px"
+            />
+          </div>
+          <div class="carousel-item active">
+            <img
+              src="https://www.metagames.toys/cdn/shop/collections/Imagens_das_categorias_1880_x_500_px_b14a0c20-da0b-49e9-8d5c-d2dc020a6e1a.png?v=1718376850&width=1100"
+              alt="Pokemon en grupos."
+              class="d-block mx-auto"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <h2 class="text-center py-5">De videojuego a fenómeno cultural global</h2>
+
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <section class="mb-4">
+          <p>
+            Pokémon es mucho más que un videojuego: es un universo que ha
+            marcado generaciones desde su nacimiento en 1996. Lo que comenzó
+            como una idea de Satoshi Tajiri y Ken Sugimori en Game Freak se
+            convirtió en una de las franquicias más exitosas de la historia,
+            expandiéndose a series animadas, películas, juegos de cartas y un
+            sinfín de productos culturales.
+          </p>
+          <p>
+            La saga debutó en Japón con
+            <strong>Pokémon Rojo y Verde</strong> para la consola portátil Game
+            Boy. El concepto era simple pero revolucionario: los jugadores
+            asumían el rol de entrenadores Pokémon, capturando criaturas,
+            entrenándolas y enfrentándolas en combates estratégicos. En 1998, la
+            franquicia llegó a Estados Unidos con las versiones
+            <strong>Rojo y Azul</strong>, desatando un fenómeno global.
+          </p>
+          <p>
+            Más allá de los juegos, el universo Pokémon tiene una rica
+            mitología. Según las leyendas, el dios Arceus dio origen al
+            universo, creando a Dialga y Palkia para controlar el tiempo y el
+            espacio, mientras Giratina fue desterrado al Mundo Distorsión.
+            Groudon formó los continentes y Kyogre los mares, estableciendo el
+            equilibrio natural. Estas historias, presentes en los juegos y el
+            anime, dieron profundidad a un mundo que mezcla ciencia ficción con
+            mitología.
+          </p>
+          <p>
+            En 1997 debutó la serie animada Pokémon, protagonizada por Ash
+            Ketchum y su inseparable Pikachu. El anime narraba la aventura de
+            Ash por convertirse en Maestro Pokémon, enfrentando gimnasios,
+            torneos y rivales memorables. La serie se convirtió en un éxito
+            internacional, consolidando personajes icónicos como Misty, Brock y
+            el Team Rocket.
+          </p>
+        </section>
+        <div class="d-flex justify-content-end">
+          <a href="/pokedex.html" target="_blank" class="btn btn-danger">
+            Ir a la Pokédex
+          </a>
+        </div>
+
+        <hr />
+        <section>
+          <h2 class="text-center mb-4">Noticias Pokémon</h2>
+          <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-8">
+              <div class="card h-100">
+                <img
+                  src="/png/pokemon-go-169.png"
+                  class="card-img-top"
+                  alt="Fiestón en Pokémon GO"
+                />
+                <div class="card-body bg-light">
+                  <h5 class="card-title">Fiestón en Pokémon GO</h5>
+                  <p class="card-text">
+                    El evento Celebración del 30.º aniversario de Pokémon en
+                    Pokémon GO es la excusa perfecta para celebrar.
+                  </p>
+                  <a href="/evento.html" target="_blank" class="btn btn-primary"
+                    >Leer más</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img
+                  src="/png/winds-waves-169-es.png"
+                  class="card-img-top"
+                  alt="Tráiler de Pokémon Viento y Oleaje"
+                />
+                <div class="card-body bg-light">
+                  <h5 class="card-title">Tráiler de Pokémon Viento y Oleaje</h5>
+                  <a
+                    href="https://www.youtube.com/watch?v=whHJkMwbtD4"
+                    target="_blank"
+                    class="btn btn-info"
+                    >Ver tráiler</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img
+                  src="/png/pokemon-presents-169.png"
+                  class="card-img-top"
+                  alt="Pokémon Presents 2026"
+                />
+                <div class="card-body bg-light">
+                  <h5 class="card-title">Pokémon Presents 2026</h5>
+                  <a
+                    href="https://www.youtube.com/watch?v=m9zCxO8HyVs"
+                    target="_blank"
+                    class="btn btn-secondary"
+                    >Ver detalles</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <br />
+    <!-- Footer -->
+    <footer class="bg-danger text-white text-center py-3">
+      <p>&copy; 2026 Historia de Pokémon – Proyecto web de Coc</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
